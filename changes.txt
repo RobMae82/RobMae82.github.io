@@ -1,0 +1,74 @@
+CHANGES OR UPDATES MADE BY MYSELF
+
+1. Removed Portfolio section
+
+2. Removed a Dropdwon Section in the later sidebar for a specific menu if needed, but not in my case
+
+3. Added section heading as suggested by validator.w3.org as a 'Warning'
+
+4. Updated my Skill with progress bar using Javascript #EXTRA
+
+5. Added a link to 'My Counter and Skills' and set up pureCounter.js #EXTRA for reduced motion
+
+6. Changed profile picture, as well background image in the landing page and the favicon icon
+
+7. used swiper.js #EXTRA to have the carousel and set it to pause on load for accessibility. It starts on hover or click and pause onmouseleave
+
+8. used Google Fonts and Bootstrap icons instead of Font Awesome #EXTRA
+
+9. I used typed.js #EXTRA so for accessibility reason I set up it for screen reader and motion sensivity accordingly
+(aria-hidden: true, span element with sr-only class and added css rules for it, plus set up prefers-reduced-motion in javascript)
+
+10. used a HTML form with bootstrap features #EXTRA
+
+11. Updated Google Map and edited the error #EXTRA
+
+From https://validator.w3.org/nu/#textarea
+
+Error: The frameborder attribute on the iframe element is obsolete. Use CSS instead.
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d4…100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+that frameborder="0" is no longer valid HTML5. It was used in older HTML versions to remove the border around an iframe.
+
+remove the frameborder attribute from the iframe and apply a border style via CSS
+
+replaced:
+frameborder="0"
+
+with HTML:
+<iframe class="map-frame" ...></iframe>
+with CSS
+.map-frame {
+  border: none;
+}
+
+Change the map to show Turin city center:
+You need to get the Google Maps embed code for Turin:
+    Go to https://maps.google.com
+    Search for Turin, Italy
+    Click “Share” → “Embed a map” → “Copy HTML”
+
+Here's an example embed for Turin city center:
+HTML:
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.6540856601223!2d7.680985776204772!3d45.07031237107137!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d70f3e233cd%3A0xd70e2030d4b87f78!2sTurin%2C%20Metropolitan%20City%20of%20Turin%2C%20Italy!5e0!3m2!1sen!2sit!4v1683132262754!5m2!1sen!2sit" 
+  class="map-frame" 
+  style="width: 100%; height: 270px;" 
+  allowfullscreen="" 
+  loading="lazy" 
+  referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+CSS:
+.map-frame {
+  border: none;
+}
+
+
+
+
+
+
+
+
+
+
