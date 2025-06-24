@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://robmae82.github.io/sitemap.xml
