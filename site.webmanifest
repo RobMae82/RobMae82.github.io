@@ -1,0 +1,21 @@
+{
+  "name": "Roberto Maestri | Web Developer & UX/UI Designer Portfolio",
+  "short_name": "Roberto Maestri",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "description": "I am Roberto Maestri and I am an IT Services Manager and a Full-Stack Developer for passion. Explore my portfolio and projects.",
+  "icons": [
+    {
+      "src": "assets/img/my-profile-img-192x192.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg"
+    },
+    {
+      "src": "assets/img/my-profile-img-512x512.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg"
+    }
+  ]
+} 
